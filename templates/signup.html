@@ -20,12 +20,13 @@ body{
     background-color: #080710;
 }
 .background{
-    width: 430px;
+    width: 500px;
     height: 520px;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
+    padding-bottom: 30px;
 }
 .background .shape{
     height: 200px;
@@ -133,6 +134,11 @@ button{
         <button type="submit">Signup</button>
         
         <a href="{% url 'login' %}" >I already have an account</a>
+        <h5 style="color: white; margin-left: 38%; margin-top: 3%;">
+            {% for msg in messages %}
+            {{msg}}
+            {% endfor %}
+          </h5>
 
     </form>
 </body>

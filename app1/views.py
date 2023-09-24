@@ -29,7 +29,8 @@ def SignupPage(request):
         pass2=request.POST.get('password2')
 
         if pass1!=pass2:
-            return HttpResponse("Your password and confrom password are not Same!!")
+            messages.success(request, "Your password and confrom password are not Same!!")
+            return redirect('signup')
         else:
 
             my_user=User.objects.create_user(uname,email,pass1)
