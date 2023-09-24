@@ -1,0 +1,34 @@
+- Username: tanvi 
+- pAssword: tanvi123
+- Created a virtual enve in a folder (https://www.youtube.com/watch?v=WJL5zF4dLns)
+- install django 
+- startproject command
+- createapp command
+- app would be created (app1)
+- in settings.py add name of app1 in installed app
+- creating a new folder as templates
+- in settings.py add templates in the template section 'DIRS': ['templates'],
+- create login and singup html page
+- create view oh each page (singup.. login..) in app1 folder 
+- Inside view.py create view of all three file login.. home.. singuup
+- create url in urls.py inside registration folder
+- in urls.py create singup page.. loin.. signup  page create path & in views.py create SingupPage to return render request
+- make migration for getting built in authentication
+- creating admin panel as superuser
+- fetch data from singup page and add it to the views.py page for storing & authentication
+- in view.py import authentication models for user from django.contrib.auth.models import User
+- import HTTP response in views
+- {% csrf_token %}  include this while passing data from login or signup page to the views
+
+
+---- authentication
+for comparing the data of login and signup
+
+- from django.contrib.auth import authenticate, login
+- authentication for verifying the user is authentocated so unauthorized user cannot acces the home page
+- from django.contrib.auth.decoraters import login_required
+
+
+
+
+
